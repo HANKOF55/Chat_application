@@ -4,8 +4,8 @@ A full-stack chat application where users can create accounts, send and accept f
 
 ## Tech Stack
 
-**Frontend:** React, Vite  
-**Backend:** Node.js, Express.js, Prisma ORM, MySQL, JWT
+**Frontend:** React, Vite, react-router-dom, redux, daisyUi 
+**Backend:** Node.js, Express.js, Prisma ORM, MySQL, JWT, socket.io
 
 ## Prerequisites
 
@@ -84,7 +84,7 @@ npx prisma migrate dev
 Start the server:
 
 ```bash
-npm start
+npm run dev
 ```
 
 The backend will run on `http://localhost:3000`.
@@ -95,8 +95,7 @@ The backend will run on `http://localhost:3000`.
 
 ⚠️ **This application requires MySQL.** The Prisma schema is configured for MySQL and may not work with PostgreSQL or SQLite.
 
-- Never commit `.env` files to version control
-- Use a strong, random `JWT_SECRET` in production
+- Use a strong, random `JWT_SECRET` 
 - If you change ports, update the corresponding `.env` files
 
 ---
@@ -104,7 +103,7 @@ The backend will run on `http://localhost:3000`.
 ## Running the Application
 
 1. Start MySQL server
-2. Start backend: `cd backend && npm start`
+2. Start backend: `cd backend && npm run devt`
 3. Start frontend: `cd frontend && npm run dev`
 4. Open `http://localhost:5173` in your browser
 
@@ -122,4 +121,4 @@ The backend will run on `http://localhost:3000`.
 
 - **Database connection error**: Check MySQL is running and `.env` credentials are correct
 - **Port in use**: Change port in `.env` files
-- **Prisma errors**: Run `npx prisma generate` again
+- **Prisma errors**: Run `npx prisma generate` again in the backend root directory.
