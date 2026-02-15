@@ -1,0 +1,29 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Harish",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.4.0",
+    "@prisma/client": "^7.4.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.0",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "nodemon": "^3.1.11",
+    "prisma": "^7.4.0"
+  }
+}
